@@ -1,60 +1,40 @@
-# D2C Customer Churn Intelligence – Part 1: Data Audit, EDA & Business Understanding
+# Part 1 – Data Audit, EDA & Business Understanding
 
-## Project Objective
+## Objective
 
-The objective of this project is to understand customer behaviour, identify potential churn indicators, and assess data quality before building any retention strategy or machine learning model.
+Perform exploratory data analysis and identify churn-risk patterns for a D2C customer retention initiative.
 
-## Dataset
+## Files Included
 
-The analysis uses the following datasets:
+* eda_audit.ipynb
+* data_quality_report.md
+* business_memo.md
+* summary_statistics.csv
+* requirements.txt
 
-* customers.csv
-* orders.csv
-* support_tickets.csv
-* web_events_snapshot.csv
-* intervention_history.csv
-* churn_labels.csv
+## Analysis Performed
 
-## Repository Structure
-
-├── eda_audit.ipynb
-
-├── data_quality_report.md
-
-├── business_memo.md
-
-├── requirements.txt
-
-└── outputs/
-
-## Tasks Performed
-
-1. Data loading and schema inspection
-2. Dataset joins and relationship validation
-3. Missing value analysis
-4. Duplicate and outlier detection
-5. Leakage risk identification
-6. Exploratory Data Analysis
-7. Churn-risk hypothesis generation
-8. Business recommendations
+* Dataset loading and inspection
+* Missing value analysis
+* Duplicate record analysis
+* Churn distribution analysis
+* Recency analysis
+* Frequency analysis
+* Monetary analysis
+* Support ticket analysis
+* Web activity analysis
+* Return rate analysis
+* Campaign engagement analysis
 
 ## Key Findings
 
-* Churned customers show lower purchase frequency.
-* Churned customers have lower recent activity.
-* Longer inactivity periods correlate with churn.
-* Low campaign engagement is associated with higher churn risk.
-* Support interactions may indicate dissatisfaction leading to churn.
+Customer inactivity, declining engagement, support dissatisfaction, and return behaviour are strongly associated with churn risk.
 
-## How to Run
+## Technologies Used
 
-pip install -r requirements.txt
-
-jupyter notebook eda_audit.ipynb
-
-## Deliverables
-
-* Data quality report
-* Business memo
-* EDA visualizations
-* Churn-risk hypotheses
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
